@@ -5,7 +5,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { ApiService } from './services/api.service'
-import { TaskToViewService } from './services/task-to-view.service'
 import { HeaderService } from './services/header.service'
 
 import { AppComponent } from './app.component';
@@ -36,7 +35,6 @@ const appRoutes: Routes = [
   ],
   providers: [
     ApiService,
-    TaskToViewService,
     HeaderService
   ],
   bootstrap: [AppComponent]
