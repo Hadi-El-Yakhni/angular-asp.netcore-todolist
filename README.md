@@ -1,5 +1,5 @@
 # angular-aspdotnetcore-todolist
-Basic CRUD Todo list built with angular for the frontend and Asp .net core for the backend. 
+Basic CRUD Todo list app built with angular for the frontend and Asp .net core for the backend. 
 
 to run the application on your computer:
 
