@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { Task } from '../models/Task';
 import { Router } from "@angular/router"
 import { ApiService } from '../services/api.service';
-import { TaskToViewService } from '../services/task-to-view.service';
 import { HeaderService } from '../services/header.service';
 
 @Component({
