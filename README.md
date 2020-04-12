@@ -6,7 +6,7 @@ to run the application on your computer:
 1- client side:
     change to client folder: "cd client"
     run "npm install" 
-    make sure to have angular cli installed (maybe you need the version p of the cli)
+    make sure to have angular cli installed 
     run "ng serve -o"
   
 2- server side:
