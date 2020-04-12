@@ -1,0 +1,28 @@
+<div class="container">
+  <nav style="margin-bottom: 25px;">
+    <div class="nav-wrapper blue" style="padding-left: 20px; padding-right: 12px;">
+      <ul class="left">
+        <li>
+          <a *ngIf="header.title !== 'TODO'" (click)="goBack()">
+            <i class="material-icons">arrow_back</i>
+          </a>
+        </li>
+      </ul>
+      <a class="brand-logo left hide-on-med-and-up">{{header.title}}</a>
+      <a class="brand-logo center hide-on-small-only">{{header.title}}</a>
+      <ul *ngIf="header.title === 'TODO'" class="right">
+        <li>
+          <a>
+            <i (click)="goToAdd()" class="material-icons">add</i>
+          </a>
+        </li>
+        <li>
+          <a (click)="api.tasks.next('refresh tasks . . .')">
+            <i class="material-icons">refresh</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <router-outlet class="routerOutletContainer"></router-outlet>
+</div>

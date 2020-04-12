@@ -1,0 +1,28 @@
+.itemConatiner {
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  width: 75%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+span {
+  width: 100%;
+}
+
+.btnsContainer {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 82px;
+}

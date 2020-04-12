@@ -1,0 +1,15 @@
+<div class="itemConatiner">
+  <div class="mainContainer">
+    <input *ngIf="!data.isDone" type="checkbox" />
+    <input *ngIf="data.isDone" type="checkbox" checked />
+    <span (click)="updateStatus()">{{data.title}}</span>
+  </div>
+  <div class="btnsContainer">
+    <div class="btn-floating btn-small white">
+      <i (click)="goEditTheTask()" class="material-icons green-text">edit</i>
+    </div>
+    <div class="btn-floating btn-small white">
+      <i (click)="api.deleteTask(data.uid)" class="material-icons red-text">delete</i>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="data.title" id="title" type="text" class="validate">
+      <label class="active" for="title">Title</label>
+      <span class="helper-text" data-error="wrong" data-success="">Task title is required</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input [(ngModel)]="data.description" id="description" type="text">
+      <label class="active" for="description">Description</label>
+    </div>
+  </div>
+  <button [disabled]="!data.title" style="margin-right: 10px;" class="btn waves-effect waves-light blue right"
+    (click)="updateTask()">
+    Update
+    <i class="material-icons right">send</i>
+  </button>
+</div>
